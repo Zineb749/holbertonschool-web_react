@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "mode": "development",
   "scripts": {
-    "start-dev": "webpack-dev-server",
-    "build": "webpack",
+    "start-dev": "webpack serve --config webpack.config.js",
+    "build": "webpack --config webpack.config.js",
     "test": "jest"
   },
   "keywords": [],
@@ -32,3 +31,4 @@
     "webpack-dev-server": "^4.15.1"
   }
 }
+
