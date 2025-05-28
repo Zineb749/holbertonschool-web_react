@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-dev": "webpack serve --config webpack.config.js",
-    "build": "webpack --config webpack.config.js",
-    "test": "jest"
+    "start-dev": "webpack-dev-server",
+    "build": "webpack",
+    "test": "jest",
+    "lint": "eslint js/main.ts --compat"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +16,7 @@
     "@babel/plugin-proposal-export-default-from": "^7.18.10",
     "@babel/preset-typescript": "^7.22.15",
     "@types/jest": "^29.5.5",
-    "eslint": "^9.24.0",
+    "eslint": "^9.27.0",
     "@typescript-eslint/eslint-plugin": "^8.29.1",
     "@typescript-eslint/parser": "^8.29.1",
     "clean-webpack-plugin": "^4.0.0",
@@ -31,4 +32,3 @@
     "webpack-dev-server": "^4.15.1"
   }
 }
-
